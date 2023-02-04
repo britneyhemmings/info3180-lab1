@@ -3,11 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>My Website - About</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}" />
 </head>
 <body>
-    <h1>Britney Hemmings</h1>
-    <p>
-        I'm an aspiring Software Engineer and Web Developer. I currently major in Computer Science and minor in Economics at the University of the West Indies. I was born and spent majority of my childhood in Kingston, Jamaica. After completing my BSc degree, I intend to further my studies in Computer Science or another tech-related field. Two of my life goals are to own a software company and to travel to all the countries the world. I enjoy watching TV series and reading novels. My favourite TV series is Grey's Anatomy and my favourite books are Pride and Prejudice by Jane Austen and To Kill a Mockingbird by Harper Lee. I believe that Web Development is a useful skill to have since as the world becomes technologically advanced, most organizations and businesses today rely on an online platform or application to carry out their daily operations successfully. Therefore, the demand for web developers continues to increase. Additionally, it allows you to earn a living while expressing your creativity.
-    </p>
+<div class="container">
+    <header>
+        <h1>Britney Hemmings</h1>
+    </header>
+    <main>
+        <img src="{{url_for('static', filename='istock-1154231467.jpeg')}}" />
+        <p>
+            Hi, I am Britney, I am an aspiring Software Engineer and Web Developer. I currently major in Computer Science and minor in Economics at the University of the West Indies. After completing my BSc degree, I intend to further my studies in Computer Science or another tech-related field. I believe that Web Development is a useful skill to have since as the world becomes technologically advanced, most organizations and businesses today rely on an online platform or application to carry out their daily operations successfully. Therefore, the demand for web developers continues to increase. Additionally, it allows you to earn a living while expressing your creativity.
+        </p>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2023, Britney Hemmings</p>
+    </footer>
+</div>
 </body>
 </html>
